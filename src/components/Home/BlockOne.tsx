@@ -114,7 +114,7 @@ const BlockOne = () => {
                   color="white"
                   lineHeight={"2"}
                   >
-                    Hi! Here's my Tech Stack:
+                    Hi! Here&apos;s my Tech Stack:
                     <br/> 
                     <span style={{fontWeight: "850"}}>Languages:</span> JavaScript, Python, TypeScript, SQL
                     <br/>

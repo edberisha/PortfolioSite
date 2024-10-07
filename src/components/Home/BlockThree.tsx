@@ -1,16 +1,12 @@
 import React from 'react'
 import {Box, Text} from '@chakra-ui/react'
-import {useState} from 'react'
 // import edphoto from '../assets/images/edphoto.png'
 import LinkedInIcon from '../assets/icons/LinkedInIcon'
 
 const BlockThree = () => {
 
-const [name, setName] = useState('')
 
-const updateName = () => {
-    setName("spongebob")
-}
+
 
   return (
     <Box
