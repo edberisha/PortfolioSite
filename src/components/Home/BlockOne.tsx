@@ -15,9 +15,7 @@ const BlockOne = () => {
 
   const router = useRouter();
 
-  const handleProjectsClick = () => {
-    router.push('/projects')
-  }
+
  
 
   return (
