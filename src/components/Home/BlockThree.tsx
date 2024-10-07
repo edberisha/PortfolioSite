@@ -1,7 +1,7 @@
 import React from 'react'
-import {Box, Text, Button, Input, Image} from '@chakra-ui/react'
+import {Box, Text} from '@chakra-ui/react'
 import {useState} from 'react'
-import edphoto from '../assets/images/edphoto.png'
+// import edphoto from '../assets/images/edphoto.png'
 import LinkedInIcon from '../assets/icons/LinkedInIcon'
 
 const BlockThree = () => {

@@ -5,16 +5,13 @@ import reactlogo from '../assets/images/reactlogo.svg'
 import nextjs from '../assets/images/nextjs.webp'
 import pythonlogo from '../assets/images/pythonlogo.png'
 import chakralogo from '../assets/images/chakralogo.png'
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import sqllogo from '../assets/images/sqllogo.svg'
 import threejslogo from '../assets/images/threejslogo.png'
 
 
 
 const BlockOne = () => {
-
-  const router = useRouter();
-
 
  
 

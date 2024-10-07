@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Box, IconButton, HStack, Popover, PopoverTrigger, PopoverContent, PopoverArrow, PopoverCloseButton, PopoverBody, Text } from '@chakra-ui/react';
+import {  FaLinkedin } from 'react-icons/fa';
+import { IconButton, HStack, Popover, PopoverTrigger, PopoverContent, PopoverArrow, PopoverCloseButton, PopoverBody, Text } from '@chakra-ui/react';
 import React from 'react';
 import { MdEmail } from 'react-icons/md';
 
