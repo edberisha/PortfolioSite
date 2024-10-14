@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Box, Link, ListItem, List } from '@chakra-ui/react';
+import { Text, Box, Link} from '@chakra-ui/react';
 import Image from 'next/image';
 import peakai from '../assets/images/peakai.png';
 import texasholdem from '../assets/images/texasholdem.png';
