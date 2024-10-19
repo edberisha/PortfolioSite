@@ -4,6 +4,7 @@ import Image from 'next/image';
 import peakai from '../assets/images/peakai.png';
 import texasholdem from '../assets/images/texasholdem.png';
 import wordapp from '../assets/images/wordapp.png';
+import stockapi from '../assets/images/stockapi.png'
 
 const BlockTwo = () => {
   return (
@@ -19,12 +20,12 @@ const BlockTwo = () => {
         My Projects - Quick Look
       </Text>
       <Box gap={20} display="flex" flexDir={["column", "column", "column", "row", "row"]}>
-        <Link href="https://wordapp-76cd48b9af07.herokuapp.com/">
+        <Link href="https://edstockapi-46617bdcc216.herokuapp.com/backtest/">
           <Text color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
-            WORD APP
+            Stock Prediction
           </Text>
           <Box flex="1" borderRadius="25px" overflow="hidden">
-            <Image src={wordapp} alt="A screenshot of the Word App" />
+            <Image src={stockapi} alt="A screenshot of the Word App" />
           </Box>
           <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
             TECH STACK USED:<br/>
@@ -35,6 +36,26 @@ const BlockTwo = () => {
                • PosegreSQL<br/>
                • Firebase Authentication<br/>
                • AI integration (OpenAI)<br/>
+               • API used: Alpha Vantage<br/>
+               • BackTesting Module<br/>
+               • Report Generation<br/>
+               
+          </Text>
+        </Link>
+        <Link href="https://wordapp-76cd48b9af07.herokuapp.com/">
+          <Text color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
+            Word App
+          </Text>
+          <Box flex="1" borderRadius="25px" overflow="hidden">
+            <Image src={wordapp} alt="A screenshot of the Word App" />
+          </Box>
+          <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
+            TECH STACK USED:<br/>
+               • Django<br/>
+               • PostgreSQL<br/>
+               • Machine Learning (sckit, pandas)<br/>
+               • Trained linear integration model<br/>
+
           </Text>
         </Link>
         <Link href="https://peak-sleek-uyitp8ljz-peak-sentry.vercel.app/">
