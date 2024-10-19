@@ -28,18 +28,11 @@ const BlockTwo = () => {
             <Image src={stockapi} alt="A screenshot of the Word App" />
           </Box>
           <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
-            TECH STACK USED:<br/>
-               • Next.js<br/>
-               • Node.js<br/>
-               • Express.js<br/>
-               • ChakraUI<br/>
-               • PosegreSQL<br/>
-               • Firebase Authentication<br/>
-               • AI integration (OpenAI)<br/>
-               • API used: Alpha Vantage<br/>
-               • BackTesting Module<br/>
-               • Report Generation<br/>
-               
+          TECH STACK USED:<br/>
+               • Django<br/>
+               • PostgreSQL<br/>
+               • Machine Learning (sckit, pandas)<br/>
+               • Trained linear integration model<br/>
           </Text>
         </Link>
         <Link href="https://wordapp-76cd48b9af07.herokuapp.com/">
@@ -50,11 +43,19 @@ const BlockTwo = () => {
             <Image src={wordapp} alt="A screenshot of the Word App" />
           </Box>
           <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
-            TECH STACK USED:<br/>
-               • Django<br/>
-               • PostgreSQL<br/>
-               • Machine Learning (sckit, pandas)<br/>
-               • Trained linear integration model<br/>
+
+          TECH STACK USED:<br/>
+               • Next.js<br/>
+               • Node.js<br/>
+               • Express.js<br/>
+               • ChakraUI<br/>
+               • PosegreSQL<br/>
+               • Firebase Authentication<br/>
+               • AI integration (OpenAI)<br/>
+               • API used: Alpha Vantage<br/>
+               • BackTesting Module<br/>
+               • Report Generation<br/>
+         
 
           </Text>
         </Link>
