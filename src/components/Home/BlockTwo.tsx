@@ -59,23 +59,7 @@ const BlockTwo = () => {
 
           </Text>
         </Link>
-        <Link href="https://peak-sleek-uyitp8ljz-peak-sentry.vercel.app/">
-          <Text color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
-            PEAK AI
-          </Text>
-          <Box flex="1" borderRadius="25px" overflow="hidden">
-            <Image src={peakai} alt="A screenshot of Peak AI" />
-          </Box>
-          <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
-            TECH STACK USED:<br/>
-            • Next.js<br/>
-            • ChakraUI<br/>
-            • TypeScript<br/>
-            • React<br/>
-            • React Spring<br/>
-            • Three.js<br/>
-          </Text>
-        </Link>
+      
         <Link href="https://edberisha.github.io/TexasHoldEm/">
           <Text fontFamily="monospace" color="white" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
             TEXAS HOLDEM

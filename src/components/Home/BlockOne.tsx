@@ -82,24 +82,7 @@ const BlockOne = () => {
                 gap={20}
 
                 >
-                      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <Button
-                fontFamily="monospace"
-                fontWeight={700}
-                bgGradient="linear(to-r, teal.500, green.500)"
-                color="white"
-                fontSize={["25px","15px","20px","20px","25px","30px"]}
-                width={["150px","90px","100px","120px","140px","160px"]}
-                p={4}
-                boxShadow="md"
-                borderRadius="md"
-                _hover={{ bg: "#145d54", transform: "scale(1.05)", transition: "all 0.3s ease" }}
-                _active={{ transform: "scale(0.95)" }}
-                animation="pulse 1.5s infinite"
-              >
-                Resume
-              </Button>
-              </a>
+                    
 
                 
                 </Box>
