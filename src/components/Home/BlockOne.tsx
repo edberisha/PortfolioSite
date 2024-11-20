@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Box, Button, Image} from '@chakra-ui/react';
+import { Text, Box, Image} from '@chakra-ui/react';
 import javascriptlogo from '../assets/images/javascriptlogo.svg'
 import reactlogo from '../assets/images/reactlogo.svg'
 import nextjs from '../assets/images/nextjs.webp'
@@ -117,14 +117,19 @@ const BlockOne = () => {
                 >
                   <Box display="flex">
                   <Image
+                  alt="whatever"
                   width={["40px","50px","60px","70px","80px"]}
                   src={javascriptlogo.src}
                   />
                   <Image
+                                    alt="whatever"
+
                   width={["40px","50px","60px","70px","80px"]}
                   src={reactlogo.src}
                   />
                   <Image
+                                    alt="whatever"
+
                   width={["40px","50px","60px","70px","80px"]}
                   src={nextjs.src}
                   />
@@ -133,18 +138,26 @@ const BlockOne = () => {
                   display="flex"
                                   >
                     <Image
+                                      alt="whatever"
+
                     width={["40px","50px","60px","70px","80px"]}
                     src={pythonlogo.src}
                     />
                   <Image
+                                    alt="whatever"
+
                     width={["40px","50px","60px","70px","80px"]}
                     src={chakralogo.src}
                     />
                     <Image
+                                      alt="whatever"
+
                     width={["40px","50px","60px","70px","80px"]}
                     src={sqllogo.src}
                     />
                     <Image
+                                      alt="whatever"
+
                     width={["40px","50px","60px","70px","80px"]}
                     src={threejslogo.src}
                     />
