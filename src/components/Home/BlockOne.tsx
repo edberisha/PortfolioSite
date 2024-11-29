@@ -99,9 +99,9 @@ const BlockOne = () => {
                   >
                     Hi! Here&apos;s my Tech Stack:
                     <br/> 
-                    <span style={{fontWeight: "850"}}>Languages:</span> JavaScript, Python, TypeScript, SQL
+                    <span style={{fontWeight: "850"}}>Languages:</span> Java, JavaScript, Python, TypeScript, SQL
                     <br/>
-                    <span style={{fontWeight: "850"}}>Frameworks & Libraries:</span>  React.js, Next.js, Chakra UI, Framer Motion
+                    <span style={{fontWeight: "850"}}>Frameworks & Libraries:</span>  Spring Boot, React.js, Next.js, Chakra UI, Framer Motion
 
 
                   </Text>
