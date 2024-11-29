@@ -92,7 +92,7 @@ const BlockOne = () => {
                 >
                   <Text
                   // border="2px solid red"
-                  fontSize={["20px","20px","20px","20px","25px","25px"]}
+                  fontSize={["20px","20px","20px","20px","23px","23px"]}
                   fontFamily="monospace"
                   color="white"
                   lineHeight={"2"}
