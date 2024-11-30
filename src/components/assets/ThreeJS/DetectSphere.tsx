@@ -15,7 +15,7 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
   const sphereRef = useRef<THREE.Points | null>(null);
   const controlsRef = useRef<OrbitControls | null>(null);
-  
+
   // Store rotation speed in a ref to ensure it updates dynamically
   const rotationSpeedRef = useRef(rotationSpeed);
 
@@ -46,8 +46,8 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
 
       // Orbit controls setup
       const controls = new OrbitControls(camera, renderer.domElement);
-      controls.enableDamping = true;
-      controls.dampingFactor = 0.25;
+      controls.enableDamping = true; // Enables the damping effect
+      controls.dampingFactor = 0.25; // Sets the damping strength
       controls.enableZoom = true;
       controls.enableRotate = true;
       controls.enablePan = true;
@@ -99,7 +99,7 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
         }
 
         if (controlsRef.current) {
-          controlsRef.current.update();
+          controlsRef.current.update(); // Update controls for damping effect
         }
 
         if (rendererRef.current && cameraRef.current) {
