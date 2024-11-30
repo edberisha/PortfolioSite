@@ -5,8 +5,8 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 interface DetectSphereProps {
   fov: number;
   particleSize: number;
-  rotationSpeed: number; // Speed of rotation
-  colorShift: number; // Added colorShift to the props
+  rotationSpeed: number;
+  colorShift: number;
 }
 
 const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotationSpeed, colorShift }) => {
@@ -16,38 +16,33 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
   const sphereRef = useRef<THREE.Points | null>(null);
   const controlsRef = useRef<OrbitControls | null>(null);
 
-  // Store rotation speed in a ref to ensure it updates dynamically
   const rotationSpeedRef = useRef(rotationSpeed);
 
   useEffect(() => {
-    rotationSpeedRef.current = rotationSpeed; // Update ref with the latest rotationSpeed
-  }, [rotationSpeed]); // Update rotationSpeedRef whenever rotationSpeed changes
+    rotationSpeedRef.current = rotationSpeed;
+  }, [rotationSpeed]);
 
   useEffect(() => {
     if (!sceneRef.current) return;
 
-    // Create the scene, camera, and renderer only if they don't exist already
     if (!rendererRef.current) {
-      // Scene setup
       const scene = new THREE.Scene();
-      scene.background = null; // Set background color to null for transparency
+      scene.background = null;
 
-      // Camera setup
       const camera = new THREE.PerspectiveCamera(fov, 1, 0.1, 1000);
       camera.position.set(0, 0, 5);
       cameraRef.current = camera;
 
-      // Renderer setup
       const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-      renderer.setSize(400, 400); // Adjust size to fit the sphere
-      renderer.setPixelRatio(window.devicePixelRatio); // Ensure proper scaling on high-DPI screens
+      renderer.setSize(400, 400);
+      renderer.setPixelRatio(window.devicePixelRatio);
       rendererRef.current = renderer;
       sceneRef.current.appendChild(renderer.domElement);
 
-      // Orbit controls setup
-      const controls = new OrbitControls(camera, renderer.domElement);
-      controls.enableDamping = true; // Enables the damping effect
-      controls.dampingFactor = 0.25; // Sets the damping strength
+      // Orbit controls setup with type assertion
+      const controls = new OrbitControls(camera, renderer.domElement) as OrbitControls;
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.25;
       controls.enableZoom = true;
       controls.enableRotate = true;
       controls.enablePan = true;
@@ -80,7 +75,7 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
 
       const particlesMaterial = new THREE.PointsMaterial({
         color: 0x41ead4,
-        size: particleSize, // Dynamic size of particles
+        size: particleSize,
         sizeAttenuation: true,
       });
 
@@ -93,13 +88,12 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
         requestAnimationFrame(animate);
 
         if (sphereRef.current) {
-          // Update rotation speed using the ref
-          sphereRef.current.rotation.y += rotationSpeedRef.current; // Use the rotationSpeedRef
-          sphereRef.current.rotation.x += rotationSpeedRef.current; // Use the rotationSpeedRef
+          sphereRef.current.rotation.y += rotationSpeedRef.current;
+          sphereRef.current.rotation.x += rotationSpeedRef.current;
         }
 
         if (controlsRef.current) {
-          controlsRef.current.update(); // Update controls for damping effect
+          controlsRef.current.update();
         }
 
         if (rendererRef.current && cameraRef.current) {
@@ -110,13 +104,12 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
       animate();
     }
 
-    // Cleanup
     return () => {
       if (rendererRef.current) {
         rendererRef.current.dispose();
       }
     };
-  }, []); // Run this effect only once, when the component is mounted
+  }, []);
 
   useEffect(() => {
     if (cameraRef.current) {
@@ -131,11 +124,10 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
     }
   }, [particleSize]);
 
-  // Handle color shift prop here
   useEffect(() => {
     if (sphereRef.current) {
       const material = sphereRef.current.material as THREE.PointsMaterial;
-      material.color.setHSL(colorShift, 1, 0.5); // Apply color shift based on the colorShift prop
+      material.color.setHSL(colorShift, 1, 0.5);
     }
   }, [colorShift]);
 
