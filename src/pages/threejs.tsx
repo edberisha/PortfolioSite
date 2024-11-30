@@ -6,7 +6,7 @@ import ReturnButton from '../components/assets/ReturnButton'
 
 const ThreeJs = () => {
   // State for controlling FOV, particle size, and rotation speed
-  const [fov, setFov] = useState(100);
+  const [fov] = useState(100);
   const [particleSize, setParticleSize] = useState(0.05);
   const [rotationSpeed, setRotationSpeed] = useState(0.01);
 

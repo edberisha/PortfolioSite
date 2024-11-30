@@ -26,7 +26,7 @@ function Lines({ amplitude, frequency, colorShift }: { amplitude: number; freque
     for (let xi = 0; xi < count; xi++) {
       for (let zi = 0; zi < count; zi++) {
         let x = sep * (xi - count / 2);
-        let z = sep * (zi - count / 2);
+        const z = sep * (zi - count / 2);
         let y = Math.sin(frequency * (x ** 2 + z ** 2 + time)) * amplitude;
         positions.push(x, y, z);
 
@@ -39,7 +39,7 @@ function Lines({ amplitude, frequency, colorShift }: { amplitude: number; freque
     for (let zi = 0; zi < count; zi++) {
       for (let xi = 0; xi < count; xi++) {
         let z = sep * (zi - count / 2);
-        let x = sep * (xi - count / 2);
+        const x = sep * (xi - count / 2);
         let y = Math.sin(frequency * (x ** 2 + z ** 2 + time)) * amplitude;
         positions.push(x, y, z);
 
