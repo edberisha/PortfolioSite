@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Box, Image} from '@chakra-ui/react';
+import { Text, Box, Image, Flex} from '@chakra-ui/react';
 import javascriptlogo from '../assets/images/javascriptlogo.svg'
 import reactlogo from '../assets/images/reactlogo.svg'
 import nextjs from '../assets/images/nextjs.webp'
@@ -8,7 +8,7 @@ import chakralogo from '../assets/images/chakralogo.png'
 // import { useRouter } from 'next/router';
 import sqllogo from '../assets/images/sqllogo.svg'
 import threejslogo from '../assets/images/threejslogo.png'
-
+import ShowcaseButton from '../assets/ShowcaseButton'
 
 
 const BlockOne = () => {
@@ -31,39 +31,55 @@ const BlockOne = () => {
                 
         
           {/* Content over Waves */}
-          <Box 
+          <Box
+          display={"flex"}
+          flexDir={["column","column","row","row","row"]}
 
-            position="relative"
-            justifyItems={"left"}
-            textAlign="left"
-            // border="2px solid orange"
-            width={["100%","100%","fit-content","fit-content","fit-content","fit-content"]}
-          >
-            <Text 
-            fontFamily="monospace"
-            color="white"
-            fontSize={['25px', '30px', '30px', '60px']}
-            textShadow="2px 2px 4px rgba(0, 0, 0, 0.7)"
-            textAlign={['center','center','left','left','left','left']}
+          > 
+                <Box 
 
-            >
-              Ed Berisha
-            </Text>
-            <Text 
-            fontWeight={800}
-            fontFamily="monospace"
-            color="white"
-            fontSize={['28px', '36px', '40px', '50px']}
-            textShadow="2px 2px 4px rgba(0, 0, 0, 0.7)"
-            textAlign={['center','center','left','left','left','left']}
-            whiteSpace={"nowrap"}
+                  position="relative"
+                  justifyItems={"left"}
+                  textAlign="left"
+                  // border="2px solid orange"
+                  width={["100%","100%","fit-content","fit-content","fit-content","fit-content"]}
+                >
+                  <Text 
+                  fontFamily="monospace"
+                  color="white"
+                  fontSize={['25px', '30px', '30px', '60px']}
+                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.7)"
+                  textAlign={['center','center','left','left','left','left']}
+
+                  >
+                    Ed Berisha
+                  </Text>
+                  <Text 
+
+                  fontWeight={800}
+                  fontFamily="monospace"
+                  color="white"
+                  fontSize={['28px', '36px', '40px', '50px']}
+                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.7)"
+                  textAlign={['center','center','left','left','left','left']}
+                  whiteSpace={"nowrap"}
 
 
-            >
-              Full Stack Engineer
-            </Text>
-            
+                  >
+                    Full Stack Engineer
+                  </Text>
+                  
+                </Box>
+                <Flex
+                align="center"
+                // border="2px solid magenta"
+                width="100%"
+                justify={"center"}
+                >
+                <ShowcaseButton />
+                </Flex>
           </Box>
+  
           <Box
           flex="1"
           // border="2px solid purple"
@@ -87,7 +103,6 @@ const BlockOne = () => {
                 
                 </Box>
                 <Box 
-                mt={["7vh","7vh","3vh","3vh","3vh","3vh"]}
                 // border="2px solid red"
                 >
                   <Text

@@ -5,9 +5,6 @@ import LinkedInIcon from '../assets/icons/LinkedInIcon'
 
 const BlockThree = () => {
 
-
-
-
   return (
     <Box
     // border="2px solid red"

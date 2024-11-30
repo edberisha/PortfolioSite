@@ -3,11 +3,11 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChakraProvider, Box } from '@chakra-ui/react';
 import { useEffect } from "react";
-// import Navbar from '../components/NavBar/NavBar'; 
-// import Footer from "@/components/Footer/Footer";
+import { useRouter } from "next/router"; // Import useRouter from next/router
 import Waves from '../components/assets/ThreeJS/Waves'
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter(); // Initialize the router
 
   useEffect(() => {
     if ('serviceWorker' in navigator) {
@@ -20,33 +20,21 @@ export default function App({ Component, pageProps }: AppProps) {
         });
     }
   }, []);
-  
+
+  // Skip rendering Waves component for the /threejs page
+  const shouldRenderWaves = router.pathname !== "/threejs"; 
+
   return (
-
-
-  
-    <ChakraProvider
-    >
-              <Box 
-              // bg="#121212"
-        
-        // border="2px solid red"
-        zIndex={0}
-        position="absolute"
-        >
-            <Waves />
+    <ChakraProvider>
+      {shouldRenderWaves && (
+        <Box zIndex={0} position="absolute">
+          <Waves />
         </Box>
+      )}
 
-        {/* <Navbar />  */}
-        <Box 
-        
-        
-        bg="#121212"
-        px="10%"
-        >
-          <Component {...pageProps} />
-        </Box>
-
+      <Box bg="#121212" px="10%">
+        <Component {...pageProps} />
+      </Box>
     </ChakraProvider>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, Box, Link} from '@chakra-ui/react';
 import Image from 'next/image';
-// import peakai from '../assets/images/peakai.png';
 import texasholdem from '../assets/images/texasholdem.png';
 import wordapp from '../assets/images/wordapp.png';
 import stockapi from '../assets/images/stockapi.png'
+import peakai from '../assets/images/peakai.png'
 
 const BlockTwo = () => {
   return (
@@ -33,6 +33,25 @@ const BlockTwo = () => {
                • PostgreSQL<br/>
                • Machine Learning (sckit, pandas)<br/>
                • Trained linear integration model<br/>
+               • API used: Alpha Vantage<br/>
+               • BackTesting Module<br/>
+               • Report Generation<br/>
+          </Text>
+        </Link>
+        <Link href="https://peak.watch">
+          <Text color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "18px", "18px"]}>
+            Peak AI Landing Site
+          </Text>
+          <Box flex="1" borderRadius="25px" overflow="hidden">
+            <Image src={peakai} alt="A screenshot of the Word App" />
+          </Box>
+          <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
+          TECH STACK USED:<br/>
+               • Next.js<br/>
+               • Chakra UI<br/>
+               • Three.js<br/>
+               • FramerMotion<br/>
+               • *Deployed via Wix for streamlined company updates<br/>
           </Text>
         </Link>
         <Link href="https://wordapp-76cd48b9af07.herokuapp.com/">
@@ -52,9 +71,7 @@ const BlockTwo = () => {
                • PosegreSQL<br/>
                • Firebase Authentication<br/>
                • AI integration (OpenAI)<br/>
-               • API used: Alpha Vantage<br/>
-               • BackTesting Module<br/>
-               • Report Generation<br/>
+
          
 
           </Text>
