@@ -45,7 +45,7 @@ const DetectSphere: React.FC<DetectSphereProps> = ({ fov, particleSize, rotation
       sceneRef.current.appendChild(renderer.domElement);
 
       // Orbit controls setup
-      const controls = new OrbitControls(camera, renderer.domElement) as any;
+      const controls = new OrbitControls(camera, renderer.domElement);
       controls.enableDamping = true;
       controls.dampingFactor = 0.25;
       controls.enableZoom = true;
