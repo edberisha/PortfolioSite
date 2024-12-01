@@ -21,13 +21,13 @@ const BlockTwo = () => {
       </Text>
       <Box gap={20} display="flex" flexDir={["column", "column", "column", "row", "row"]}>
         <Link href="https://edstockapi-46617bdcc216.herokuapp.com/backtest/">
-          <Text color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
+          <Text pb="3" color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
             Stock Prediction
           </Text>
           <Box flex="1" borderRadius="25px" overflow="hidden">
             <Image src={stockapi} alt="A screenshot of the Word App" />
           </Box>
-          <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
+          <Text p={2} fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
           TECH STACK USED:<br/>
                • Django<br/>
                • PostgreSQL<br/>
@@ -39,13 +39,13 @@ const BlockTwo = () => {
           </Text>
         </Link>
         <Link href="https://peak.watch">
-          <Text color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "18px", "18px"]}>
+          <Text pb="3" color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "18px", "18px"]}>
             Peak AI Landing Site
           </Text>
           <Box flex="1" borderRadius="25px" overflow="hidden">
             <Image src={peakai} alt="A screenshot of the Word App" />
           </Box>
-          <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
+          <Text p={2} fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
           TECH STACK USED:<br/>
                • Next.js<br/>
                • Chakra UI<br/>
@@ -55,13 +55,13 @@ const BlockTwo = () => {
           </Text>
         </Link>
         <Link href="https://wordapp-76cd48b9af07.herokuapp.com/">
-          <Text color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
+          <Text pb={3} color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
             Word App
           </Text>
           <Box flex="1" borderRadius="25px" overflow="hidden">
             <Image src={wordapp} alt="A screenshot of the Word App" />
           </Box>
-          <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
+          <Text p={2} fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
 
           TECH STACK USED:<br/>
                • Next.js<br/>
@@ -78,13 +78,13 @@ const BlockTwo = () => {
         </Link>
       
         <Link href="https://edberisha.github.io/TexasHoldEm/">
-          <Text fontFamily="monospace" color="white" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
+          <Text pb={3} fontFamily="monospace" color="white" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
             TEXAS HOLDEM
           </Text>
           <Box flex="1" borderRadius="25px" overflow="hidden">
             <Image src={texasholdem} alt="A screenshot of Texas Holdem" />
           </Box>
-          <Text fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
+          <Text p={2} fontSize={["12px", "14px", "14px", "17px"]} fontFamily="monospace" color="white">
             TECH STACK USED:<br/>
             • React<br/>
             • ChakraUI<br/>
