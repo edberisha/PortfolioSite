@@ -1,3 +1,4 @@
+
 declare module '*.pdf' {
     const src: string;
     export default src;
@@ -7,6 +8,11 @@ declare module '*.pdf' {
     import { Camera, EventDispatcher, Vector3 } from 'three';
   
     export class OrbitControls extends EventDispatcher {
+      enableDamping: boolean;
+      dampingFactor: number;
+      enableZoom: boolean;
+      enableRotate: boolean;
+      enablePan: boolean;
       constructor(object: Camera, domElement: HTMLElement);
       object: Camera;
       domElement: HTMLElement;
@@ -24,4 +30,6 @@ declare module '*.pdf' {
       dispose(): void;
     }
   }
+  
+
   
