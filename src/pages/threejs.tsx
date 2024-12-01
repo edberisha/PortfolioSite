@@ -15,13 +15,14 @@ const ThreeJs = () => {
   const [waveColorShift, setWaveColorShift] = useState(0.54);      // Color shift for Waves
 
   return (
-    <Flex
+    <Flex 
       direction={["column", "column", "row", "row"]}
       align="center"
       justify="center"
       
-    >
-        <Flex
+    > 
+    
+        <Flex 
         mt="10vh"
               gap="150px"  // Reduced the gap for better spacing between the two Flex containers
               color="white"
@@ -30,13 +31,22 @@ const ThreeJs = () => {
               direction={["column", "column", "row", "row"]}
               align="center"
               justify="center">
-                <Flex mb="auto">
-                    <ReturnButton />
-                </Flex>
+                <Box mb="auto" >
+                  <Flex >
+                      <ReturnButton />
+                  </Flex>
+                  <Flex mt="100%">
+                    <Text fontSize= "19px" fontFamily={"monospace"}>
+                      Click and drag the Three.js objects to rotate perspective, and scroll over them to shift the field of view.
+                    </Text>
+
+                  </Flex>
+                </Box>
+    
       {/* Left Flex: DetectSphere controls and display */}
       <Flex
         mb="auto"
-        // border="2px solid red"
+        
         display="flex"
                 align="center"
         justify="center"
@@ -59,6 +69,7 @@ const ThreeJs = () => {
             <SliderThumb />
           </Slider>
         </Box>
+
     
         {/* Particle Size Slider */}
         <Box mb={6} width="300px">
