@@ -20,7 +20,7 @@ const BlockTwo = () => {
         My Projects - Quick Look
       </Text>
       <Box gap={20} display="flex" flexDir={["column", "column", "column", "row", "row"]}>
-        <Link href="https://edstockapi-46617bdcc216.herokuapp.com/backtest/">
+        <Link href="https://stock-api-ed-086b465fff21.herokuapp.com/">
           <Text pb="3" color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
             Stock Prediction
           </Text>
@@ -54,7 +54,7 @@ const BlockTwo = () => {
                • *Deployed via Wix for streamlined company updates<br/>
           </Text>
         </Link>
-        <Link href="https://wordapp-76cd48b9af07.herokuapp.com/">
+        <Link href="https://dictionary-app-fec7fddd3c43.herokuapp.com/">
           <Text pb={3} color="white" fontFamily="monospace" textAlign="center" fontSize={["13px", "13px", "15px", "15px", "20px", "20px"]}>
             Word App
           </Text>
